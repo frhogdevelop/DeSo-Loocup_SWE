@@ -15,6 +15,15 @@ Lightweight widget for finding Swedish DeSO area codes from an address.
 
 Stop the container with `Ctrl+C` when you are done.
 
+### No Docker?
+
+- Double-click `demo.html` to open the demo directly in your browser.
+- Or run a quick static server (Python example):
+  ```sh
+  python -m http.server 8080
+  ```
+  Then browse to `http://localhost:8080/demo.html`.
+
 -------------------------------------------------------------------
 
 ### Embed the Widget ###
