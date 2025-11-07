@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeSO Widget Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #f5f5f5;
+    }
+    .example-header {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .example-header h1 {
+      margin: 0 0 0.5rem 0;
+      color: #333;
+    }
+    .example-header p {
+      margin: 0;
+      color: #666;
+    }
+    .widget-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+  
+  <!-- React and ReactDOM (loaded before widget) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Widget loader script -->
+  <script src="widget-loader.js"></script>
+</head>
+<body>
+  <div class="example-header">
+    <h1>DeSO Address Lookup Widget Example</h1>
+    <p>This page demonstrates how to embed the DeSO widget into your website. The widget appears below.</p>
+  </div>
+
+  <div class="widget-container">
+    <!-- Widget will be rendered here -->
+    <div id="deso-widget-root"></div>
+  </div>
+
+  <div class="example-header" style="margin-top: 2rem;">
+    <h2>Integration Code</h2>
+    <p>To add this widget to your site, include these scripts and add a div with id="deso-widget-root":</p>
+    <pre style="background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>&lt;!-- React and ReactDOM --&gt;
+&lt;script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"&gt;&lt;/script&gt;
+&lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Widget loader --&gt;
+&lt;script src="widget-loader.js"&gt;&lt;/script&gt;
+
+&lt;!-- Container for widget --&gt;
+&lt;div id="deso-widget-root"&gt;&lt;/div&gt;</code></pre>
+  </div>
+</body>
+</html>

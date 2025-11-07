@@ -1,0 +1,6 @@
+services:
+  deso-widget:
+    build: .
+    ports:
+      - "8080:80"
+
